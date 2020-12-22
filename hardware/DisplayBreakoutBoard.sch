@@ -1,0 +1,331 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LS027B7DH01 Breakout board"
+Date "2020-12-22"
+Rev "v1"
+Comp "ddB0515"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x10 J2
+U 1 1 5FC43545
+P 3610 2180
+F 0 "J2" H 3690 2172 50  0000 L CNN
+F 1 "LS027B7DH01" H 3690 2081 50  0000 L CNN
+F 2 "Connectors_pretty:FH12-10S-0.5SH_55" H 3610 2180 50  0001 C CNN
+F 3 "~" H 3610 2180 50  0001 C CNN
+	1    3610 2180
+	1    0    0    -1  
+$EndComp
+Text Label 3410 1780 2    50   ~ 0
+SCLK
+Text Label 3410 1880 2    50   ~ 0
+SI
+Text Label 3410 1980 2    50   ~ 0
+SCS
+Text Label 3410 2080 2    50   ~ 0
+EXTCOMIN
+Text Label 3410 2180 2    50   ~ 0
+DISP
+Text Label 3410 2480 2    50   ~ 0
+EXTMODE
+Text Label 1240 2040 0    50   ~ 0
+3V3
+Text Label 1240 2140 0    50   ~ 0
+GND
+Text Label 1240 2640 0    50   ~ 0
+SI
+Text Label 1240 2540 0    50   ~ 0
+SCS
+Text Label 1240 2240 0    50   ~ 0
+EXTMODE
+$Comp
+L Device:C_Small C6
+U 1 1 5FCAAEFF
+P 2490 2570
+F 0 "C6" H 2490 2630 50  0000 L CNN
+F 1 "0.1uF" H 2510 2500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2490 2570 50  0001 C CNN
+F 3 "~" H 2490 2570 50  0001 C CNN
+	1    2490 2570
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5FCAB224
+P 2210 2570
+F 0 "C5" H 2110 2520 50  0000 L CNN
+F 1 "0.1uF" H 1990 2640 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2210 2570 50  0001 C CNN
+F 3 "~" H 2210 2570 50  0001 C CNN
+	1    2210 2570
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5FCAB50D
+P 2780 2570
+F 0 "C7" H 2790 2630 50  0000 L CNN
+F 1 "1uF" H 2800 2500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2780 2570 50  0001 C CNN
+F 3 "~" H 2780 2570 50  0001 C CNN
+	1    2780 2570
+	1    0    0    -1  
+$EndComp
+Text Label 1240 2740 0    50   ~ 0
+SCLK
+Text Label 1240 2340 0    50   ~ 0
+DISP
+$Comp
+L Device:C_Small C2
+U 1 1 5FCADB88
+P 1560 1450
+F 0 "C2" H 1570 1510 50  0000 L CNN
+F 1 "3.3uF" H 1330 1380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1560 1450 50  0001 C CNN
+F 3 "~" H 1560 1450 50  0001 C CNN
+	1    1560 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5FCADDF2
+P 1800 1450
+F 0 "C3" H 1810 1510 50  0000 L CNN
+F 1 "3.3uF" H 1580 1390 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1800 1450 50  0001 C CNN
+F 3 "~" H 1800 1450 50  0001 C CNN
+	1    1800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5FCAE48D
+P 3240 1150
+F 0 "C4" H 3332 1196 50  0000 L CNN
+F 1 "0.1uF" H 3332 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3240 1150 50  0001 C CNN
+F 3 "~" H 3240 1150 50  0001 C CNN
+	1    3240 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L IC_library:LTC1517CS5-5 IC1
+U 1 1 5FCABA8C
+P 1980 1100
+F 0 "IC1" H 2530 1365 50  0000 C CNN
+F 1 "LTC1517CS5-5" H 2530 1274 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2930 1200 50  0001 L CNN
+F 3 "" H 2930 1100 50  0001 L CNN
+F 4 "LINEAR TECHNOLOGY - LTC1517CS5-5 - IC, CHARGE PUMP REG, 5V, TSOT23-5" H 2930 1000 50  0001 L CNN "Description"
+F 5 "1.45" H 2930 900 50  0001 L CNN "Height"
+F 6 "Linear Technology" H 2930 600 50  0001 L CNN "Manufacturer_Name"
+	1    1980 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3240 1250 3080 1250
+Wire Wire Line
+	3080 1250 3080 1200
+Wire Wire Line
+	3240 1050 3080 1050
+Wire Wire Line
+	3080 1050 3080 1100
+$Comp
+L Device:C_Small C1
+U 1 1 5FCADEB6
+P 1370 1340
+F 0 "C1" H 1430 1420 50  0000 L CNN
+F 1 "3.3uF" H 1380 1280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1370 1340 50  0001 C CNN
+F 3 "~" H 1370 1340 50  0001 C CNN
+	1    1370 1340
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 5FCABC96
+P 1040 2340
+F 0 "J1" H 958 2857 50  0000 C CNN
+F 1 "CONTROL CONNECTOR" H 958 2766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1040 2340 50  0001 C CNN
+F 3 "~" H 1040 2340 50  0001 C CNN
+	1    1040 2340
+	-1   0    0    -1  
+$EndComp
+Text Label 1180 1100 2    50   ~ 0
+3V3
+Text Label 1180 1590 2    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FCB1CD7
+P 930 3180
+F 0 "#FLG0101" H 930 3255 50  0001 C CNN
+F 1 "PWR_FLAG" V 930 3308 50  0000 L CNN
+F 2 "" H 930 3180 50  0001 C CNN
+F 3 "~" H 930 3180 50  0001 C CNN
+	1    930  3180
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FCB29EC
+P 930 3300
+F 0 "#FLG0102" H 930 3375 50  0001 C CNN
+F 1 "PWR_FLAG" V 930 3428 50  0000 L CNN
+F 2 "" H 930 3300 50  0001 C CNN
+F 3 "~" H 930 3300 50  0001 C CNN
+	1    930  3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1980 1100 1370 1100
+Wire Wire Line
+	1370 1240 1370 1100
+Connection ~ 1370 1100
+Wire Wire Line
+	1370 1100 1180 1100
+Wire Wire Line
+	1370 1440 1370 1590
+Wire Wire Line
+	1370 1590 1180 1590
+Connection ~ 1370 1590
+Wire Wire Line
+	1800 1550 1800 1590
+Wire Wire Line
+	1980 1300 1930 1300
+Wire Wire Line
+	1800 1300 1800 1350
+Wire Wire Line
+	1930 1300 1930 1590
+Wire Wire Line
+	1930 1590 2180 1590
+Connection ~ 1930 1300
+Wire Wire Line
+	1930 1300 1800 1300
+Text Label 2180 1590 0    50   ~ 0
+5V
+Text Label 1980 1200 2    50   ~ 0
+GND
+Wire Wire Line
+	1370 1590 1560 1590
+Wire Wire Line
+	1800 1300 1560 1300
+Wire Wire Line
+	1560 1300 1560 1350
+Connection ~ 1800 1300
+Wire Wire Line
+	1560 1550 1560 1590
+Connection ~ 1560 1590
+Wire Wire Line
+	1560 1590 1800 1590
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5FCBBDD1
+P 2380 3190
+F 0 "JP1" H 2380 3395 50  0000 C CNN
+F 1 "CUT FOR DIRECT PIN DRIVE" H 2380 3304 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2380 3190 50  0001 C CNN
+F 3 "~" H 2380 3190 50  0001 C CNN
+	1    2380 3190
+	1    0    0    -1  
+$EndComp
+Text Label 2230 3190 2    50   ~ 0
+EXTMODE
+Text Label 930  3180 2    50   ~ 0
+3V3
+Text Label 930  3300 2    50   ~ 0
+GND
+Text Label 2530 3190 0    50   ~ 0
+GND
+Text Label 1240 2440 0    50   ~ 0
+EXTCOMIN
+Text Label 3410 2280 2    50   ~ 0
+5V
+Text Label 3410 2380 2    50   ~ 0
+5V
+Wire Wire Line
+	2780 2470 2780 2380
+Wire Wire Line
+	2780 2380 3410 2380
+Wire Wire Line
+	2490 2470 2490 2280
+Wire Wire Line
+	2490 2280 3410 2280
+Wire Wire Line
+	2210 2470 2210 2180
+Wire Wire Line
+	2210 2180 3410 2180
+Wire Wire Line
+	2210 2670 2210 2780
+Wire Wire Line
+	2210 2780 2490 2780
+Wire Wire Line
+	2780 2780 2780 2670
+Wire Wire Line
+	2490 2670 2490 2780
+Connection ~ 2490 2780
+Wire Wire Line
+	2490 2780 2780 2780
+Text Label 2090 2780 2    50   ~ 0
+GND
+Wire Wire Line
+	2210 2780 2090 2780
+Connection ~ 2210 2780
+Text Label 3410 2580 2    50   ~ 0
+GND
+Text Label 3410 2680 2    50   ~ 0
+GND
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FCCB04B
+P 1140 3630
+F 0 "H1" H 1240 3676 50  0000 L CNN
+F 1 "MountingHole" H 1240 3585 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 1140 3630 50  0001 C CNN
+F 3 "~" H 1140 3630 50  0001 C CNN
+	1    1140 3630
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FCCB241
+P 1140 3810
+F 0 "H2" H 1240 3856 50  0000 L CNN
+F 1 "MountingHole" H 1240 3765 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 1140 3810 50  0001 C CNN
+F 3 "~" H 1140 3810 50  0001 C CNN
+	1    1140 3810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FCCB40E
+P 1140 3990
+F 0 "H3" H 1240 4036 50  0000 L CNN
+F 1 "MountingHole" H 1240 3945 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 1140 3990 50  0001 C CNN
+F 3 "~" H 1140 3990 50  0001 C CNN
+	1    1140 3990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FCCB819
+P 1140 4170
+F 0 "H4" H 1240 4216 50  0000 L CNN
+F 1 "MountingHole" H 1240 4125 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 1140 4170 50  0001 C CNN
+F 3 "~" H 1140 4170 50  0001 C CNN
+	1    1140 4170
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Connectors_library)(type Legacy)(uri ${KIPRJMOD}/kicad-libs/Connectors_library.lib)(options "")(descr ""))
+  (lib (name IC_library)(type Legacy)(uri ${KIPRJMOD}/kicad-libs/IC_library.lib)(options "")(descr ""))
+  (lib (name Jumpers_library)(type Legacy)(uri ${KIPRJMOD}/kicad-libs/Jumpers_library.lib)(options "")(descr ""))
+  (lib (name Transistor_library)(type Legacy)(uri ${KIPRJMOD}/kicad-libs/Transistor_library.lib)(options "")(descr ""))
+)
